@@ -7,5 +7,5 @@
 
 import Foundation
 
-print("Hello, World!")
+NQueue().solveNQueues(8)
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		170B2ECF25E88FA30021A34A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B2ECE25E88FA30021A34A /* main.swift */; };
+		170B2ED725E890320021A34A /* NQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B2ED625E890320021A34A /* NQueue.swift */; };
+		170B2EDC25E8A2500021A34A /* FindNearestAncestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B2EDB25E8A2500021A34A /* FindNearestAncestor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		170B2ECB25E88FA30021A34A /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		170B2ECE25E88FA30021A34A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		170B2ED625E890320021A34A /* NQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQueue.swift; sourceTree = "<group>"; };
+		170B2EDB25E8A2500021A34A /* FindNearestAncestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNearestAncestor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				170B2ECE25E88FA30021A34A /* main.swift */,
+				170B2ED625E890320021A34A /* NQueue.swift */,
+				170B2EDB25E8A2500021A34A /* FindNearestAncestor.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -119,6 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170B2EDC25E8A2500021A34A /* FindNearestAncestor.swift in Sources */,
+				170B2ED725E890320021A34A /* NQueue.swift in Sources */,
 				170B2ECF25E88FA30021A34A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
