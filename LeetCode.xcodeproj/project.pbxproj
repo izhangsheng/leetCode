@@ -17,6 +17,7 @@
 		17553C3F25FA5F9A0035B7F1 /* SellStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C3A25FA5F9A0035B7F1 /* SellStock.swift */; };
 		17553C4025FA5F9A0035B7F1 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C3B25FA5F9A0035B7F1 /* Sort.swift */; };
 		17553C4325FA5FA10035B7F1 /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C4225FA5FA10035B7F1 /* LinkList.swift */; };
+		17553C4725FA69230035B7F1 /* DailyTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C4625FA69230035B7F1 /* DailyTemperature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		17553C3A25FA5F9A0035B7F1 /* SellStock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellStock.swift; sourceTree = "<group>"; };
 		17553C3B25FA5F9A0035B7F1 /* Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		17553C4225FA5FA10035B7F1 /* LinkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
+		17553C4625FA69230035B7F1 /* DailyTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				17553C3925FA5F9A0035B7F1 /* SubSequence.swift */,
 				17553C3825FA5F9A0035B7F1 /* TopK.swift */,
 				17553C4225FA5FA10035B7F1 /* LinkList.swift */,
+				17553C4625FA69230035B7F1 /* DailyTemperature.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				170B2EDF25E8CA740021A34A /* RecoverBST.swift in Sources */,
 				17553C4325FA5FA10035B7F1 /* LinkList.swift in Sources */,
 				17553C3F25FA5F9A0035B7F1 /* SellStock.swift in Sources */,
+				17553C4725FA69230035B7F1 /* DailyTemperature.swift in Sources */,
 				170B2ECF25E88FA30021A34A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

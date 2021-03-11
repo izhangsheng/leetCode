@@ -28,5 +28,7 @@ print(sortCls.mergeSort(elements: arr))
 
 sortCls.quickSort(elements: &arr)
 
+let temperatures = [73, 74, 75, 71, 69, 72, 76, 73]
+print(DailyTemperature().dailyTemperatures(temperatures))
 print(arr)
 
