@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SubSequence {
+class Subsequence {
     
     /**
      输入：text1 = "abcde", text2 = "ace"
