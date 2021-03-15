@@ -8,7 +8,6 @@
 import Foundation
 
 class Subsequence {
-    
     /**
      输入：text1 = "abcde", text2 = "ace"
      输出：3
@@ -81,5 +80,28 @@ class Subsequence {
         }
         
         return maxSum
+    }
+    
+    /// 最长递增子序列 输入：nums = [10, 9, 2, 5, 3, 7, 101, 18]
+    /// 输出：4
+    /// 解释：最长递增子序列是 [2, 3, 7, 101]，因此长度为 4 。
+    /// - Parameter nums: 一组数
+    /// - Returns: 最长的
+    func lengthOfLIS(_ nums: [Int]) -> Int {
+        guard !nums.isEmpty else {
+            return 0
+        }
+        let count = nums.count
+        var dp = Array(repeating: 1, count: nums.count)
+        var maxLen = 1
+        for i in 1 ..< count {
+            for j in 0 ..< i {
+                if nums[i] > nums[j] {
+                    dp[i] = max(dp[i], dp[j] + 1)
+                }
+            }
+            maxLen = max(maxLen, dp[i])
+        }
+        return maxLen
     }
 }
