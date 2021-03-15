@@ -44,12 +44,7 @@ import Foundation
 //
 //print(linkList1.isPalindrome(linkList1))
 
-var stop = false
-var num = 0
-while !stop {
-    print(num)
-    if num > 1000000000 {
-        stop = true
-    }
-    num += 1
-}
+let nums = [10, 9, 2, 5, 3, 7, 101, 18]
+let subsequence = Subsequence()
+let a = subsequence.lengthOfLIS(nums)
+print(a)
