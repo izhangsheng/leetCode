@@ -65,7 +65,7 @@ class Sort {
         for begin in 1 ... end {
             var curIdx = begin
             let ele = elements[curIdx]
-            let insertIdx = searchForInsertIndex(with: begin, elements: elements)
+            let insertIdx = insertIndex(with: begin, elements: elements)
             while curIdx > insertIdx {
                 elements[curIdx] = elements[curIdx - 1]
                 curIdx -= 1
@@ -76,7 +76,7 @@ class Sort {
     
     /// 利用二分搜索找到 idx 位置元素待插入的下标
     /// - Parameter idx: index
-    private func searchForInsertIndex(with idx: Int, elements: [Int]) -> Int {
+    private func insertIndex(with idx: Int, elements: [Int]) -> Int {
         var begin = 0
         var end = idx
         while end > begin {

@@ -20,6 +20,7 @@
 		17553C4725FA69230035B7F1 /* DailyTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C4625FA69230035B7F1 /* DailyTemperature.swift */; };
 		17553C4A25FCC3430035B7F1 /* Permute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C4925FCC3430035B7F1 /* Permute.swift */; };
 		17553C4E25FCC93B0035B7F1 /* ValidBracket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C4D25FCC93B0035B7F1 /* ValidBracket.swift */; };
+		17553C5C2600FDAD0035B7F1 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C5B2600FDAD0035B7F1 /* BinarySearch.swift */; };
 		17B7C69525FB1C4E00AE4F53 /* CollectRainwater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B7C69425FB1C4E00AE4F53 /* CollectRainwater.swift */; };
 		17FBCAC82600C20300F9F6A8 /* Knapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FBCAC72600C20300F9F6A8 /* Knapsack.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		17553C4625FA69230035B7F1 /* DailyTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperature.swift; sourceTree = "<group>"; };
 		17553C4925FCC3430035B7F1 /* Permute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permute.swift; sourceTree = "<group>"; };
 		17553C4D25FCC93B0035B7F1 /* ValidBracket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidBracket.swift; sourceTree = "<group>"; };
+		17553C5B2600FDAD0035B7F1 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		17B7C69425FB1C4E00AE4F53 /* CollectRainwater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectRainwater.swift; sourceTree = "<group>"; };
 		17FBCAC72600C20300F9F6A8 /* Knapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knapsack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				17553C4D25FCC93B0035B7F1 /* ValidBracket.swift */,
 				17B7C69425FB1C4E00AE4F53 /* CollectRainwater.swift */,
 				17FBCAC72600C20300F9F6A8 /* Knapsack.swift */,
+				17553C5B2600FDAD0035B7F1 /* BinarySearch.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -165,10 +168,11 @@
 				17FBCAC82600C20300F9F6A8 /* Knapsack.swift in Sources */,
 				17553C4E25FCC93B0035B7F1 /* ValidBracket.swift in Sources */,
 				17553C4A25FCC3430035B7F1 /* Permute.swift in Sources */,
-				17553C3E25FA5F9A0035B7F1 /* SubSequence.swift in Sources */,
+				17553C3E25FA5F9A0035B7F1 /* Subsequence.swift in Sources */,
 				17553C3E25FA5F9A0035B7F1 /* Subsequence.swift in Sources */,
 				17553C4025FA5F9A0035B7F1 /* Sort.swift in Sources */,
 				17553C3C25FA5F9A0035B7F1 /* ShortPath.swift in Sources */,
+				17553C5C2600FDAD0035B7F1 /* BinarySearch.swift in Sources */,
 				17B7C69525FB1C4E00AE4F53 /* CollectRainwater.swift in Sources */,
 				170B2ED725E890320021A34A /* NQueue.swift in Sources */,
 				17553C3D25FA5F9A0035B7F1 /* TopK.swift in Sources */,

@@ -174,4 +174,26 @@ public class ListNode {
         
         return true
     }
+    
+    public func kthLargest(_ root: TreeNode?, _ k: Int) -> Int {
+        var kth = -1
+        var num = k
+
+        func bst(_ root: TreeNode?) {
+            if root == nil { return }
+            
+            bst(root!.right)
+            if k == 0 { return }
+            
+            num -= 1
+            if num == 0 {
+                kth = root!.val
+            }
+
+            bst(root!.left)
+        }
+        
+        bst(root)
+        return kth
+    }
 }

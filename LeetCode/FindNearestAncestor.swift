@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TreeNode {
+public class TreeNode {
     var val: Int
     var left: TreeNode?
     var right: TreeNode?
