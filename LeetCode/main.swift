@@ -32,6 +32,18 @@ import Foundation
 //print(DailyTemperature().dailyTemperatures(temperatures))
 //print(arr)
 
+//print(ValidBracket().isValid("()"))
+
+//let linkList1 = ListNode(1)
+//let linkList2 = ListNode(1)
+//let linkList3 = ListNode(2)
+//let linkList4 = ListNode(1)
+//linkList1.next = linkList2
+//linkList2.next = linkList3
+//linkList3.next = linkList4
+//
+//print(linkList1.isPalindrome(linkList1))
+
 let nums = [10, 9, 2, 5, 3, 7, 101, 18]
 let subsequence = Subsequence()
 let a = subsequence.lengthOfLIS(nums)
