@@ -19,6 +19,7 @@
 		17553C4325FA5FA10035B7F1 /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C4225FA5FA10035B7F1 /* LinkList.swift */; };
 		17553C4725FA69230035B7F1 /* DailyTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C4625FA69230035B7F1 /* DailyTemperature.swift */; };
 		17B7C69525FB1C4E00AE4F53 /* CollectRainwater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B7C69425FB1C4E00AE4F53 /* CollectRainwater.swift */; };
+		17FBCAC82600C20300F9F6A8 /* Knapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FBCAC72600C20300F9F6A8 /* Knapsack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		17553C4225FA5FA10035B7F1 /* LinkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
 		17553C4625FA69230035B7F1 /* DailyTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperature.swift; sourceTree = "<group>"; };
 		17B7C69425FB1C4E00AE4F53 /* CollectRainwater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectRainwater.swift; sourceTree = "<group>"; };
+		17FBCAC72600C20300F9F6A8 /* Knapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knapsack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				17553C4225FA5FA10035B7F1 /* LinkList.swift */,
 				17553C4625FA69230035B7F1 /* DailyTemperature.swift */,
 				17B7C69425FB1C4E00AE4F53 /* CollectRainwater.swift */,
+				17FBCAC72600C20300F9F6A8 /* Knapsack.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				170B2EDC25E8A2500021A34A /* FindNearestAncestor.swift in Sources */,
+				17FBCAC82600C20300F9F6A8 /* Knapsack.swift in Sources */,
 				17553C3E25FA5F9A0035B7F1 /* Subsequence.swift in Sources */,
 				17553C4025FA5F9A0035B7F1 /* Sort.swift in Sources */,
 				17553C3C25FA5F9A0035B7F1 /* ShortPath.swift in Sources */,
