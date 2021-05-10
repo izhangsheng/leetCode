@@ -8,7 +8,7 @@
 import Foundation
 
 class BinarySearch {
-    /**
+    /*!
      整数数组 nums 按升序排列，数组中的值 互不相同 。
 
      在传递给函数之前，nums 在预先未知的某个下标 k（0 <= k < nums.length）上进行了 旋转，使数组变为 [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]（下标 从 0 开始 计数）。例如， [0,1,2,4,5,6,7] 在下标 3 处经旋转后可能变为 [4,5,6,7,0,1,2] 。
@@ -19,37 +19,34 @@ class BinarySearch {
      */
     func search(_ nums: [Int], _ target: Int) -> Int {
         guard !nums.isEmpty else {
-            return 0
+            return -1
         }
-        let count = nums.count
-        if count == 1 {
+        
+        if nums.count == 1 {
             return nums[0] == target ? 0 : -1
         }
         var left = 0
-        var right = count - 1
-        while right > left {
+        var right = nums.count - 1
+        while right >= left {
             let middle = (left + right) >> 1
             if nums[middle] == target {
                 return middle
             }
             if nums[0] <= nums[middle] {
-                if nums[0] <= target, target < nums[middle] {
-                    /// 左半部分有序
+                if target >= nums[0], target < nums[middle] {
                     right = middle - 1
                 } else {
-                    /// 右半部分有序
                     left = middle + 1
                 }
             } else {
-                if nums[middle] < target, target <= nums[count - 1] {
-                    left = middle + 1;
+                if target > nums[middle], target <= nums.last! {
+                    left = middle + 1
                 } else {
-                    right = middle - 1;
+                    right = middle - 1
                 }
             }
         }
         
         return -1
     }
-    
 }

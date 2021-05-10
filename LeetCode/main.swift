@@ -49,4 +49,4 @@ import Foundation
 //let a = subsequence.lengthOfLIS(nums)
 //print(a)
 
-BinarySearch().search([1, 3], 3)
+//BinarySearch().search1([4, 5, 6, 7, 0, 1, 2], 0)
