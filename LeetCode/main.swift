@@ -44,9 +44,9 @@ import Foundation
 //
 //print(linkList1.isPalindrome(linkList1))
 
-//let nums = [10, 9, 2, 5, 3, 7, 101, 18]
-//let subsequence = Subsequence()
-//let a = subsequence.lengthOfLIS(nums)
-//print(a)
+let nums = [10, 9, 2, 5, 3, 7, 101, 18]
+let subsequence = Subsequence()
+let a = subsequence.lengthOfLIS(nums)
+print(a)
 
-//BinarySearch().search1([4, 5, 6, 7, 0, 1, 2], 0)
+//BinarySearch().search([1, 3], 3)

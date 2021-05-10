@@ -114,21 +114,47 @@ class Subsequence {
     /// 解释：最长递增子序列是 [2, 3, 7, 101]，因此长度为 4 。
     /// - Parameter nums: 一组数
     /// - Returns: 最长的
+//    func lengthOfLIS(_ nums: [Int]) -> Int {
+//        guard !nums.isEmpty else {
+//            return 0
+//        }
+//        let count = nums.count
+//        var dp = Array(repeating: 1, count: nums.count)
+//        var maxLen = 1
+//        for i in 1 ..< count {
+//            for j in 0 ..< i {
+//                if nums[i] > nums[j] {
+//                    dp[i] = max(dp[i], dp[j] + 1)
+//                }
+//            }
+//            maxLen = max(maxLen, dp[i])
+//        }
+//        return maxLen
+//    }
+    
+    /// 单调栈解法
     func lengthOfLIS(_ nums: [Int]) -> Int {
         guard !nums.isEmpty else {
             return 0
         }
-        let count = nums.count
-        var dp = Array(repeating: 1, count: nums.count)
-        var maxLen = 1
-        for i in 1 ..< count {
-            for j in 0 ..< i {
-                if nums[i] > nums[j] {
-                    dp[i] = max(dp[i], dp[j] + 1)
+        var stack = [nums[0]]
+        for i in 1 ..< nums.count {
+            let end = stack.count
+            var begin = 0
+            var stop = false
+            while !stop {
+                if nums[i] <= stack[begin] {
+                    stack[begin] = nums[i]
+                    stop = true
+                } else {
+                    if begin == end - 1 {
+                        stack.append(nums[i])
+                        stop = true
+                    }
                 }
+                begin += 1
             }
-            maxLen = max(maxLen, dp[i])
         }
-        return maxLen
+        return stack.count
     }
 }

@@ -7,6 +7,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+<<<<<<< HEAD
             uuid = "5389B636-1C50-40FB-B6E6-D4DB788C0725"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -17,6 +18,34 @@
             startingLineNumber = "50"
             endingLineNumber = "50"
             landmarkName = "search(_:_:)"
+=======
+            uuid = "AD1CED4A-A2F1-475E-92DB-D865F59C6958"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCode/LinkList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "isPalindrome(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3BED1E8-910D-4A27-93BD-CECECDE2C71E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCode/LinkList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "isPalindrome(_:)"
+>>>>>>> d3e81a0a005da56dab269b7c80530b2a81ffe7e9
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
