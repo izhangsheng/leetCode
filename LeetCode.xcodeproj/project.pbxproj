@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		170B2ECF25E88FA30021A34A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B2ECE25E88FA30021A34A /* main.swift */; };
 		170B2ED725E890320021A34A /* NQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B2ED625E890320021A34A /* NQueue.swift */; };
-		170B2EDC25E8A2500021A34A /* FindNearestAncestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B2EDB25E8A2500021A34A /* FindNearestAncestor.swift */; };
+		170B2EDC25E8A2500021A34A /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B2EDB25E8A2500021A34A /* Tree.swift */; };
 		170B2EDF25E8CA740021A34A /* RecoverBST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170B2EDE25E8CA740021A34A /* RecoverBST.swift */; };
 		17553C3C25FA5F9A0035B7F1 /* ShortPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C3725FA5F9A0035B7F1 /* ShortPath.swift */; };
 		17553C3D25FA5F9A0035B7F1 /* TopK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553C3825FA5F9A0035B7F1 /* TopK.swift */; };
@@ -42,7 +42,7 @@
 		170B2ECB25E88FA30021A34A /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		170B2ECE25E88FA30021A34A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		170B2ED625E890320021A34A /* NQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQueue.swift; sourceTree = "<group>"; };
-		170B2EDB25E8A2500021A34A /* FindNearestAncestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNearestAncestor.swift; sourceTree = "<group>"; };
+		170B2EDB25E8A2500021A34A /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		170B2EDE25E8CA740021A34A /* RecoverBST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverBST.swift; sourceTree = "<group>"; };
 		17553C3725FA5F9A0035B7F1 /* ShortPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortPath.swift; sourceTree = "<group>"; };
 		17553C3825FA5F9A0035B7F1 /* TopK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopK.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			children = (
 				170B2ECE25E88FA30021A34A /* main.swift */,
 				170B2ED625E890320021A34A /* NQueue.swift */,
-				170B2EDB25E8A2500021A34A /* FindNearestAncestor.swift */,
+				170B2EDB25E8A2500021A34A /* Tree.swift */,
 				170B2EDE25E8CA740021A34A /* RecoverBST.swift */,
 				17553C3A25FA5F9A0035B7F1 /* SellStock.swift */,
 				17553C3725FA5F9A0035B7F1 /* ShortPath.swift */,
@@ -170,6 +170,7 @@
 			files = (
 				170B2EDC25E8A2500021A34A /* FindNearestAncestor.swift in Sources */,
 				178CEB2B262343220048B043 /* SearchWord.swift in Sources */,
+				170B2EDC25E8A2500021A34A /* Tree.swift in Sources */,
 				17FBCAC82600C20300F9F6A8 /* Knapsack.swift in Sources */,
 				17553C4E25FCC93B0035B7F1 /* ValidBracket.swift in Sources */,
 				17553C4A25FCC3430035B7F1 /* Permute.swift in Sources */,
