@@ -26,11 +26,7 @@ class BinarySearch {
             return nums[0] == target ? 0 : -1
         }
         var left = 0
-<<<<<<< HEAD
         var right = nums.count - 1
-=======
-        var right = count - 1
->>>>>>> d3e81a0a005da56dab269b7c80530b2a81ffe7e9
         while right >= left {
             let middle = (left + right) >> 1
             if nums[middle] == target {

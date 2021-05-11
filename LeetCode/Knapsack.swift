@@ -41,4 +41,77 @@ class Knapsack {
         
         return dp[n]
     }
+    
+    func climbStairs(_ n: Int) -> Int {
+        if n == 0 {
+            return 0
+        } else if n == 1 {
+            return 1
+        } else if n == 2 {
+            return 2
+        }
+        var one = 1
+        var two = 2
+        var current = 0
+        for _ in 3 ... n {
+            current = one + two
+            one = two
+            two = current
+        }
+        return current
+    }
+    
+    /*!
+     螺旋矩阵
+     
+     给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。
+     示例 1：
+     输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]
+     输出：[1,2,3,6,9,8,7,4,5]
+
+     */
+    func spiralOrder(_ matrix: [[Int]]) -> [Int] {
+        let rows = matrix.count
+        guard rows > 0 else {
+            return []
+        }
+        
+        let columns = matrix[0].count
+        guard columns > 0 else {
+            return []
+        }
+        
+        var left = 0
+        var right = columns - 1
+        var top = 0
+        var bottom = rows - 1
+        var list = [Int]()
+        while left <= right, top <= bottom {
+            for i in left ... right {
+                list.append(matrix[top][i])
+            }
+            
+            if top < bottom {
+                for j in top + 1 ... bottom {
+                    list.append(matrix[j][right])
+                }
+            }
+
+            if left < right, top < bottom {
+                for m in (left ..< right).reversed() {
+                    list.append(matrix[bottom][m])
+                }
+                for n in (top + 1 ..< bottom).reversed() {
+                    list.append(matrix[n][left])
+                }
+            }
+            
+            left += 1
+            right -= 1
+            top += 1
+            bottom -= 1
+        }
+        
+        return list
+    }
 }
