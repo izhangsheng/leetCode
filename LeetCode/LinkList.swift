@@ -7,11 +7,7 @@
 
 import Foundation
 
-public class ListNode: Equatable {
-    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
-        return lhs.val == rhs.val
-    }
-    
+public class ListNode {
     public var val: Int
     public var next: ListNode?
     public init(_ val: Int) {
@@ -284,7 +280,7 @@ public class ListNode: Equatable {
      
     private func buildTree(_ left: ListNode, _ right: ListNode?) -> TreeNode? {
         if let rightOk = right {
-            if rightOk.val == left.val {
+            if rightOk === left {
                 return nil
             }
         }
@@ -305,7 +301,7 @@ public class ListNode: Equatable {
     private func getMidNode(_ left: ListNode, _ right: ListNode?) -> ListNode? {
         var slow: ListNode? = left
         var fast: ListNode? = left
-        while fast != right, fast?.next != right {
+        while fast !== right, fast?.next !== right {
             slow = slow?.next
             fast = fast?.next?.next
         }
