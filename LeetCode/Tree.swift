@@ -90,6 +90,7 @@ class Tree {
         return result
     }
     
+    // 对称二叉树
     func isSymmetric(_ root: TreeNode?) -> Bool {
         guard let _ = root else {
             return true
@@ -111,5 +112,32 @@ class Tree {
             return false
         }
         return travelsal(left?.left, right?.right) && travelsal(left?.right, right?.left)
+    }
+    
+    /// 二叉树的右视图
+    func rightSideView(_ root: TreeNode?) -> [Int] {
+        var result = [Int]()
+        guard let root = root else { return result }
+        var queue = [root]
+
+        // 存储着每一层的元素数量
+        var level = 1
+        while !queue.isEmpty {
+            level -= 1
+            let front = queue.removeFirst()
+            if let left = front.left {
+                queue.append(left)
+            }
+            if let right = front.right {
+                queue.append(right)
+            }
+            
+            if level == 0 { // 进入下一层遍历
+                level = queue.count
+                result.append(front.val)
+            }
+        }
+        
+        return result
     }
 }
