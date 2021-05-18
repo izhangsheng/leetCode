@@ -114,7 +114,7 @@ class Tree {
         return travelsal(left?.left, right?.right) && travelsal(left?.right, right?.left)
     }
     
-    /// 二叉树的右视图
+    /// 二叉树的右视图 ----> bfs
     func rightSideView(_ root: TreeNode?) -> [Int] {
         var result = [Int]()
         guard let root = root else { return result }
@@ -139,5 +139,25 @@ class Tree {
         }
         
         return result
+    }
+    
+    // ---> dfs
+    func rightSideView1(_ root: TreeNode?) -> [Int] {
+        var result = [Int]()
+        guard let root = root else { return result }
+        dfs(root, 0, &result)
+        return result
+    }
+    
+    private func dfs(_ node: TreeNode?, _ depth: Int, _ res: inout [Int]) {
+        guard let node = node else { return }
+        var idx = depth
+        if idx == res.count {
+            res.append(node.val)
+        }
+        
+        idx += 1
+        dfs(node.right, idx, &res)
+        dfs(node.left, idx, &res)
     }
 }
