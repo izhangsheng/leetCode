@@ -8,6 +8,17 @@
 import Foundation
 
 class ShortPath {
+    // https://leetcode-cn.com/problems/unique-paths/submissions/
+    func uniquePaths(_ m: Int, _ n: Int) -> Int {
+            var dp = Array(repeating: Array(repeating: 1, count: n), count: m)
+            for i in 1 ..< m {
+                for j in 1 ..< n {
+                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+                }
+            }
+            return dp[m - 1][n - 1]
+    }
+    
     /// 二维数组中从左上角到右下角最短路径，只能往右、往下
     /// - Parameter paths: 二维数组
     /// - Returns: 返回路径上值相加
