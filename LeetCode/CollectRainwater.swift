@@ -19,9 +19,6 @@ class CollectRainwater {
         var dpRHeight = height
         var end = count - 2
         while end > 0 {
-            if dpRHeight[end + 1] < height[end + 1] {
-                dpRHeight[end] = height[end + 1]
-            }
             dpRHeight[end] = max(dpRHeight[end + 1], height[end + 1])
             end -= 1
         }
