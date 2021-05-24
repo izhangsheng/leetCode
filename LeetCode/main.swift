@@ -44,10 +44,10 @@ import Foundation
 //
 //print(linkList1.isPalindrome(linkList1))
 
-let nums = [10, 9, 2, 5, 3, 7, 101, 18]
-let subsequence = Subsequence()
-let a = subsequence.lengthOfLIS(nums)
-print(a)
+//let nums = [10, 9, 2, 5, 3, 7, 101, 18]
+//let subsequence = Subsequence()
+//let a = subsequence.lengthOfLIS(nums)
+//print(a)
 
 //BinarySearch().search([1, 3], 3)
 
@@ -64,36 +64,6 @@ func removeDuplicates(_ nums: inout [Int]) -> Int {
     }
     return slow +  1
 }
-
-
-func isValidBST(_ root: TreeNode?) -> Bool {
-    guard let root = root else {
-        return false
-    }
-    var isBst = true
-    
-    var preEle = -999999999999999
-    var stack = [TreeNode]()
-    var travelNode: TreeNode? = root
-    while !stack.isEmpty || travelNode != nil {
-        if let nodeOk = travelNode {
-            stack.append(nodeOk)
-            travelNode = nodeOk.left
-        } else {
-            let removeTop = stack.removeLast()
-            if preEle > removeTop.val {
-                isBst = false
-                break
-            }
-            preEle = removeTop.val
-            travelNode = removeTop.right
-        }
-    }
-    
-    return isBst
-}
-
-
 
 func maxSlidingWindow(_ nums: [Int], _ k: Int) -> [Int] {
     guard nums.count >= k else {

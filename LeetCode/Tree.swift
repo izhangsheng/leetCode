@@ -160,4 +160,61 @@ class Tree {
         dfs(node.right, idx, &res)
         dfs(node.left, idx, &res)
     }
+    
+    func isValidBST(_ root: TreeNode?) -> Bool {
+        guard let root = root else {
+            return false
+        }
+        var isBst = true
+        
+        var preEle = -999999999999999
+        var stack = [TreeNode]()
+        var travelNode: TreeNode? = root
+        while !stack.isEmpty || travelNode != nil {
+            if let nodeOk = travelNode {
+                stack.append(nodeOk)
+                travelNode = nodeOk.left
+            } else {
+                let removeTop = stack.removeLast()
+                if preEle > removeTop.val {
+                    isBst = false
+                    break
+                }
+                preEle = removeTop.val
+                travelNode = removeTop.right
+            }
+        }
+        
+        return isBst
+    }
+
+    class RecoverBST {
+        var preNode: TreeNode?
+        var firstNode: TreeNode?
+        var secondNode: TreeNode!
+        func findWrongNode(root: TreeNode) {
+            inorder(node: root)
+            let tmp = firstNode!.val
+            firstNode!.val = secondNode.val
+            secondNode.val = tmp
+        }
+        
+        func inorder(node: TreeNode?) {
+            guard let _ = node else {
+                return
+            }
+            inorder(node: node?.left)
+            if let preNodeOk = preNode {
+                if preNodeOk.val > node!.val {
+                    secondNode = node
+                    if firstNode != nil {
+                        return
+                    }
+                    firstNode = preNode
+                }
+            }
+            preNode = node
+            inorder(node: node?.right)
+        }
+    }
 }
