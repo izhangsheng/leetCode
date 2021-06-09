@@ -28,7 +28,7 @@ class DP {
         }
         let row = grid.count
         let col = grid[0].count
-        var dp = Array(repeating: Array(repeating: 99999999999999, count: col), count: row)
+        var dp = Array(repeating: Array(repeating: Int.max, count: col), count: row)
         dp[0][0] = grid[0][0]
         for i in 1 ..< row {
             dp[i][0] = dp[i - 1][0] + grid[i][0]

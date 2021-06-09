@@ -167,7 +167,7 @@ class Tree {
         }
         var isBst = true
         
-        var preEle = -999999999999999
+        var preEle = Int.min
         var stack = [TreeNode]()
         var travelNode: TreeNode? = root
         while !stack.isEmpty || travelNode != nil {
