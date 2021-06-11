@@ -187,6 +187,51 @@ class Tree {
         
         return isBst
     }
+    
+    /// 查找二叉搜索树的后继节点
+    func inorderSuccessor(root: TreeNode, p: TreeNode) -> TreeNode? {
+        var node: TreeNode? = root
+        var stack = [TreeNode]()
+        var stop = false
+        while node != nil || !stack.isEmpty {
+            if node != nil {
+                stack.insert(node!, at: 0)
+                node = node?.left
+            } else {
+                let curNode = stack.removeFirst()
+                if stop {
+                    return curNode
+                }
+                node = curNode.right
+                if p.val == curNode.val {
+                    stop = true
+                }
+            }
+        }
+        
+        return nil
+    }
+    
+    func inorderSuccessor1(root: TreeNode, p: TreeNode) -> TreeNode? {
+        var pre: TreeNode? = nil
+        var stop = true
+        dfs(root: root, p: p, pre: &pre, stop: &stop)
+        return pre
+    }
+    
+    private func dfs(root: TreeNode?, p: TreeNode, pre: inout TreeNode?, stop: inout Bool) {
+        if (root == nil) { return }
+        dfs(root: root?.right, p: p, pre: &pre, stop: &stop)
+        if root!.val == p.val {
+            stop = false;
+            return;
+        }
+        if stop {
+            pre = root
+        }
+        dfs(root: root?.left, p: p, pre: &pre, stop: &stop)
+    }
+    
 
     class RecoverBST {
         var preNode: TreeNode?
