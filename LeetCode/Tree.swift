@@ -261,5 +261,38 @@ class Tree {
             preNode = node
             inorder(node: node?.right)
         }
+        
+        func findWrongNodeByStack(_ root: TreeNode?) {
+            guard let _ = root else {
+                return
+            }
+            var curNode: TreeNode? = root
+            var stack = [TreeNode]()
+            
+            var first: TreeNode?
+            var second: TreeNode?
+            var preNode: TreeNode? = nil
+            while curNode != nil || !stack.isEmpty {
+                while curNode != nil {
+                    stack.append(curNode!)
+                    curNode = curNode?.left
+                }
+                let top = stack.removeLast()
+                if preNode != nil, preNode!.val > top.val {
+                    first = top
+                    if second != nil {
+                        break
+                    }
+                    second = preNode
+                }
+                preNode = top
+                curNode = top.right
+            }
+            if let _ = first, let _ = second {
+                let tmp = first!.val
+                first?.val = second!.val
+                second?.val = tmp
+            }
+        }
     }
 }
